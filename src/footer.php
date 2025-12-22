@@ -109,7 +109,7 @@
 
             <div class="md:py-3 py-4 flex flex-col md:flex-row sm:items-center sm:justify-between gap-3">
                 <div class="flex sm:flex-row flex-col md:items-center items-start gap-3 sm:gap-8 md:gap-6 
-                            lg:gap-8 text-base leading-[1.8] text-[#52525B]">
+                    lg:gap-8 text-base leading-[1.8] text-[#52525B]">
                     <a href="/contact">Contact</a>
                     <a href="/privacy-policy">Privacy policy</a>
                     <a href="/sitemap">Sitemap</a>
