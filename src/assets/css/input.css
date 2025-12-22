@@ -1,3 +1,59 @@
 @import "tailwindcss";
 
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+::-webkit-scrollbar-track {
+    background: #E4E4E7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EF6A24;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EF6A24;
+}
+
+.linear-background {
+    background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
+}
+
+.linear-background-secondary {
+    background: linear-gradient(146.18deg, #0C84BC 10.48%, #1658A5 86.16%);
+}
+
+.orange-radial {
+    background: radial-gradient(97.86% 73.98% at 100% 26.02%, #FFDDCC 0%, #FBFBFB 100%)
+}
+
+.light-blue-linear {
+    background: radial-gradient(91.5% 69.17% at 100% 69.17%, #CDEFFF 0%, #FBFBFB 100%)
+}
+
+.radial-gradient {
+    background: radial-gradient(70.74% 96.61% at 16.42% 23.92%, #CDEFFF 0%, #FBFBFB 100%)
+}
+
+.linear-text-gradient {
+    background: linear-gradient(90deg, #EF6A24 0%, #0C84BC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.shadow-stack {
+    box-shadow:
+        3.55px 2.13px 8.51px 0px #8C8C8C1A,
+        14.19px 7.8px 16.32px 0px #8C8C8C17,
+        31.22px 17.74px 21.29px 0px #8C8C8C0D,
+        56.05px 31.93px 25.54px 0px #8C8C8C03,
+        87.27px 49.67px 28.38px 0px #8C8C8C00;
+}
+
+@media (min-width: 96rem) {
+    .container {
+        max-width: 85rem !important;
+    }
+}
