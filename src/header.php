@@ -82,11 +82,11 @@
             </div>
     </header>
 
-    <button id="backToTop"
-        class="hidden fixed bottom-6 right-6 z-50 rounded-full bg-black text-white p-3 shadow-lg 
-        transition hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black cursor-pointer">
-        ↑
+    <button id="backToTop" class="hidden fixed bottom-6 right-6 z-50 rounded-full linear-background text-white
+        transition cursor-pointer w-11 h-11">
+        <img alt='Arrow Up' class="mx-auto mr-[10.5px]" src="./assets/icons/arrow-up.png">
     </button>
+
 
     <script>
         const toggleBtn = document.getElementById("menu-toggle");
