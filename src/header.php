@@ -73,9 +73,23 @@
             <div id="mobile-menu" class="hidden absolute top-25 -right-full w-[65%] sm:w-1/2 bg-white border-[#E3E3E3] 
                 border rounded-2xl shadow-lg p-6 z-50 transition-all duration-300 ease-in-out">
                 <ul class="flex flex-col gap-4">
-                    <li><a href="/who-we-are" class=" text-black navigation-font">Who We Are</a></li>
-                    <li><a href="/brand-story" class=" text-black navigation-font">Brand Story</a></li>
-                    <li><a href="/researchers" class=" text-black navigation-font">Researchers</a></li>
+                    <li>
+                        <a href="/who-we-are" class=" text-black navigation-font">
+                            Who We Are
+
+                            <ul class="mt-1 ml-7 list-disc flex flex-col gap-2">
+                                <li class="text-base leading-[1.8]">
+                                    <a href='/brand-story'>Brand Story</a>
+                                </li>
+
+                                <li class="text-base leading-[1.8]">
+                                    <a href='/researchers'>Researchers</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- <li><a href="/brand-story" class=" text-black navigation-font">Brand Story</a></li>
+                    <li><a href="/researchers" class=" text-black navigation-font">Researchers</a></li> -->
                     <li><a href="/product" class=" text-black navigation-font">Product</a></li>
                     <li><a href="/insights" class=" text-black navigation-font">Insights</a></li>
                 </ul>
