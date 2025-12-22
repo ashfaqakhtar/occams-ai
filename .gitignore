@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Cache
+.cache/
+dist/
+build/
+
+# Composer (if PHP dependencies later add karo)
+vendor/
+
+# XAMPP / Local server specific
+.htaccess.bak
