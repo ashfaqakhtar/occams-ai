@@ -36,23 +36,23 @@
 
                     <ul class="mt-7.25 h-[65%] flex flex-col justify-between gap-2">
                         <li class="text-[#52525B]">
-                            <a href='/who-we-are' class="text-base leading-[1.8]">
+                            <a href='who-we-are' class="text-base leading-[1.8]">
                                 Who we are
                             </a>
 
                             <ul class="mt-1 ml-7 list-disc text-[#52525B]">
                                 <li class="text-base leading-[1.8]">
-                                    <a href='/brand-story'>Brand Story</a>
+                                    <a href='brand'>Brand Story</a>
                                 </li>
 
                                 <li class="text-base leading-[1.8]">
-                                    <a href='/researchers'>Researchers</a>
+                                    <a href='researchers'>Researchers</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="text-[#52525B]">
-                            <a href='/our-services' class="text-base leading-[1.8]">
+                            <a href='our-services' class="text-base leading-[1.8]">
                                 Our Services / Products
                             </a>
                         </li>
@@ -66,15 +66,15 @@
 
                     <ul class="mt-7.25 h-[65%] flex flex-col justify-between gap-2">
                         <li class="text-[#52525B]">
-                            <a href='/insights' class="text-base leading-[1.8]">Insights</a>
+                            <a href='insights' class="text-base leading-[1.8]">Insights</a>
                         </li>
 
                         <li class="text-[#52525B]">
-                            <a href='/career' class="text-base leading-[1.8]">Career</a>
+                            <a href='career' class="text-base leading-[1.8]">Career</a>
                         </li>
 
                         <li class="text-[#52525B]">
-                            <a href='/contact' class="text-base leading-[1.8]">Contact</a>
+                            <a href='contact' class="text-base leading-[1.8]">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -110,10 +110,10 @@
             <div class="md:py-3 py-4 flex flex-col md:flex-row sm:items-center sm:justify-between gap-3">
                 <div class="flex sm:flex-row flex-col md:items-center items-start gap-3 sm:gap-8 md:gap-6 
                     lg:gap-8 text-base leading-[1.8] text-[#52525B]">
-                    <a href="/contact">Contact</a>
-                    <a href="/privacy-policy">Privacy policy</a>
-                    <a href="/sitemap">Sitemap</a>
-                    <a href="/terms-conditions">Terms of Use</a>
+                    <a href="contact">Contact</a>
+                    <a href="privacy-policy">Privacy policy</a>
+                    <a href="sitemap">Sitemap</a>
+                    <a href="terms-conditions">Terms of Use</a>
                 </div>
 
                 <p class="text-base leading-[1.8] text-[#52525B]">

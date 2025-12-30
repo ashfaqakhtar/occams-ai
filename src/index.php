@@ -29,12 +29,12 @@ include "header.php";
                     </p>
 
                     <div class='flex sm:flex-row flex-col items-center gap-4 mt-5'>
-                        <a href='/' class="rounded-[30px] py-2.5 h-12 flex items-center font-semibold cursor-pointer
+                        <a href='' class="rounded-[30px] py-2.5 h-12 flex items-center font-semibold cursor-pointer
                             px-5 text-white linear-background w-48 justify-center sm:w-auto text-base">
                             Speak with our team
                         </a>
 
-                        <a href='/' class="rounded-[30px] py-2.5 h-12 flex items-center px-5 font-semibold cursor-pointer
+                        <a href='' class="rounded-[30px] py-2.5 h-12 flex items-center px-5 font-semibold cursor-pointer
                             justify-center sm:w-auto text-[#EF6A24] border-2 border-[#F99D3C] w-48 text-base">
                             See our Products
                         </a>
@@ -396,44 +396,43 @@ include "header.php";
 </section>
 
 <!-- Products Section -->
-<section class="px-5 pb-12.5" >
+<section class="px-5 pb-12.5">
     <div class='container mx-auto'>
-        
-            <div class="relative md:rounded-[30px] linear-background-secondary h-auto lg:p-16
-                sm:p-10 p-8 rounded-3xl">
-                <img src="./assets/images/products.png" alt="Products" class="absolute right-0 top-0 md:w-auto w-48">
+        <div class="relative md:rounded-[30px] linear-background-secondary h-auto lg:p-16
+            sm:p-10 p-8 rounded-3xl">
+            <img src="./assets/images/products.png" alt="Products" class="absolute right-0 top-0 md:w-auto w-48">
 
-                <div class="relative z-10" data-aos='zoom-in-up'>
-                    <div class="lg:max-w-4xl max-w-3xl">
-                        <div class="md:h-18.75 md:w-18.75 md:rounded-[20px] rounded-2xl bg-white h-15 w-15">
-                            <img src="./assets/icons/products_icon.png" alt="Products" class="md:mt-0 mt-1">
-                        </div>
-
-                        <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-white sm:mt-4 mt-2.5">
-                            Products
-                        </h1>
-
-                        <p class='xl:text-[22px] md:text-lg text-base sm:mt-4 mt-1.5 text-white font-normal'>
-                            Software built on clear logic, transparent reasoning, and measurable outcomes. Each product
-                            addresses patterns that repeat across industries.
-                        </p>
+            <div class="relative z-10" data-aos='zoom-in-up'>
+                <div class="lg:max-w-4xl max-w-3xl">
+                    <div class="md:h-18.75 md:w-18.75 md:rounded-[20px] rounded-2xl bg-white h-15 w-15">
+                        <img src="./assets/icons/products_icon.png" alt="Products" class="md:mt-0 mt-1">
                     </div>
 
-                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="./assets/images/incubation_ai.png" alt="Incubation Ai" />
-                        </a>
+                    <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-white sm:mt-4 mt-2.5">
+                        Products
+                    </h1>
 
-                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="./assets/images/cfoinsights_ai.png" alt="Cfoinsights Ai" />
-                        </a>
+                    <p class='xl:text-[22px] md:text-lg text-base sm:mt-4 mt-1.5 text-white font-normal'>
+                        Software built on clear logic, transparent reasoning, and measurable outcomes. Each product
+                        addresses patterns that repeat across industries.
+                    </p>
+                </div>
 
-                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="./assets/images/taxvantage_ai.png" alt="Taxvantage Ai" />
-                        </a>
-                    </div>
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                        <img src="./assets/images/incubation_ai.png" alt="Incubation Ai" />
+                    </a>
+
+                    <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                        <img src="./assets/images/cfoinsights_ai.png" alt="Cfoinsights Ai" />
+                    </a>
+
+                    <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                        <img src="./assets/images/taxvantage_ai.png" alt="Taxvantage Ai" />
+                    </a>
                 </div>
             </div>
+        </div>
     </div>
 </section>
 
@@ -558,7 +557,7 @@ include "header.php";
                 Operators and builders focused on U.S. SMBs - measurable value, clear service standards.
             </p>
 
-            <a href='/' class="rounded-[30px] text-base py-3 h-12 inline-block font-medium
+            <a href='' class="rounded-[30px] text-base py-3 h-12 inline-block font-medium
                 cursor-pointer text-white px-6 linear-background mt-5">
                 Meet the team
             </a>
@@ -574,12 +573,12 @@ include "header.php";
             </div>
 
             <div class='md:ml-12.5 flex sm:flex-row flex-col md:gap-4 gap-2.5 mt-5'>
-                <a href='/' class="rounded-[30px] text-base py-2.5 h-12 flex items-center font-semibold px-5
+                <a href='' class="rounded-[30px] text-base py-2.5 h-12 flex items-center font-semibold px-5
                     cursor-pointer text-white sm:px-7 linear-background w-32 justify-center sm:w-auto">
                     See roles
                 </a>
 
-                <a href='/' class="rounded-[30px] text-base py-2.5 flex items-center sm:px-7 font-semibold cursor-pointer
+                <a href='' class="rounded-[30px] text-base py-2.5 flex items-center sm:px-7 font-semibold cursor-pointer
                     w-32 h-12 sm:w-auto justify-center text-[#EF6A24] bg-white border-2 border-[#EF6A24] px-5">
                     Our Values
                 </a>
