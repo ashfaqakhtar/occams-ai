@@ -49,9 +49,6 @@ include "header.php";
     </div> -->
 </section>
 
-<?php
-include 'who-we-are.php';
-?>
 
 <!-- Why AI Fails Inside Organizations Section -->
 <section class="bg-white relative bg-no-repeat bg-position-[right_center] px-5 md:bg-size-[auto_50%] bg-size-[auto_30%]"
@@ -101,13 +98,13 @@ include 'who-we-are.php';
                     <hr class="border-[0.5px] border-[#BBBBBB] w-1/5" />
                 </div>
 
-                <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-balck mt-2">
+                <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-black mt-2">
                     Why AI Fails Inside
                     <br class="md:flex hidden">
                     Organizations
                 </h1>
 
-                <h6 class="lg:text-4xl sm:text-3xl text-xl font-medium lg:max-w-6xl mt-10">
+                <h6 class="lg:text-4xl sm:text-3xl text-xl font-medium  mt-10">
                     Organizations know <span class="text-[#0C84BC]">intelligence</span> will define their
                     <span class="text-[#EF6A24]">future</span>.
                     <span class="text-[#CDCDCD]" id="why-we-exist" data-split>
@@ -117,14 +114,14 @@ include 'who-we-are.php';
                 </h6>
 
                 <p class='xl:text-[22px] md:text-[17px] text-base text-[#52525B] md:font-light font-medium 
-                    lg:max-w-6xl mt-5'>
+                     mt-5'>
                     Leaders face tools they cannot fully explain. Teams face workflows they cannot adopt.
                     Decision-makers face systems that act without clear reasoning. As a result, intelligence becomes
                     impressive on paper but unusable in practice.
                 </p>
 
                 <p class='xl:text-[22px] md:text-[17px] text-base text-[#52525B] md:font-light font-medium 
-                    lg:max-w-6xl mt-5'>
+                     mt-5'>
                     This gap holds businesses back. It slows adoption. It creates risk. It turns AI into a promise
                     instead of a functioning part of daily work.
                 </p>
@@ -134,41 +131,37 @@ include 'who-we-are.php';
 </section>
 
 <!-- What Occams AI Does Section -->
-<section class="pb-12.5">
-    <div class="relative h-screen radial-gradient-mix">
-        <img src="./assets/images/occams-ai-does.png" alt="bg" class="absolute w-full h-full object-cover z-0" />
+<section class="mb-12.5"
+    style="background-image: url('./assets/images/what-occams-ai-does-bg.webp'); background-position: center; background-size: cover;">
 
-        <div class="relative z-20 h-full flex items-center px-5">
-            <div class='container mx-auto'>
-                <img src='./assets/icons/diamond_gradient_ai.svg' class='lg:h-9 h-8' alt='Diamond Gradient'>
+    <div class='container mx-auto lg:py-45 md:py-35 py-25 px-5 md:px-0'>
+        <img src='./assets/icons/diamond_gradient_ai.svg' class='lg:h-9 h-8' alt='Diamond Gradient'>
 
-                <div class="flex items-center gap-2.5 mt-2">
-                    <p class="text-base font-medium text-white">Our Approach</p>
-                    <hr class="border-[0.5px] border-[#BBBBBB] w-1/5" />
-                </div>
+        <div class="flex items-center gap-2.5 mt-2">
+            <p class="text-base font-medium text-white">Our Approach</p>
+            <hr class="border-[0.5px] border-[#BBBBBB] w-1/5" />
+        </div>
 
-                <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-white mt-2">
-                    What Occams AI Does
-                </h1>
+        <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-white mt-2">
+            What Occams AI Does
+        </h1>
 
-                <div class="mt-10 lg:pr-10">
-                    <p class='xl:text-[22px] md:text-[17px] text-base text-white font-medium'>
-                        Occams AI makes intelligence practical. Our purpose is to ensure organizations understand
-                        the intelligence they deploy and gain value from it.
-                    </p>
+        <div class="mt-10 lg:pr-10">
+            <p class='xl:text-[22px] md:text-[17px] text-base text-white font-medium'>
+                Occams AI makes intelligence practical. Our purpose is to ensure organizations understand
+                the intelligence they deploy and gain value from it.
+            </p>
 
-                    <p class='xl:text-[22px] md:text-[17px] text-base mt-2 text-white font-medium'>
-                        We design systems that explain their reasoning, follow clear logic, and align with real
-                        operational needs. Every insight is transparent. Every recommendation can be traced, and
-                        every workflow supports human judgment instead of weakening it.
-                    </p>
+            <p class='xl:text-[22px] md:text-[17px] text-base mt-2 text-white font-medium'>
+                We design systems that explain their reasoning, follow clear logic, and align with real
+                operational needs. Every insight is transparent. Every recommendation can be traced, and
+                every workflow supports human judgment instead of weakening it.
+            </p>
 
-                    <p class='xl:text-[22px] md:text-[17px] text-base mt-2 text-white font-medium'>
-                        This way, Intelligence becomes reliable enough to support decisions, improve performance,
-                        and advance strategy. 
-                    </p>
-                </div>
-            </div>
+            <p class='xl:text-[22px] md:text-[17px] text-base mt-2 text-white font-medium'>
+                This way, Intelligence becomes reliable enough to support decisions, improve performance,
+                and advance strategy. 
+            </p>
         </div>
     </div>
 </section>
@@ -404,17 +397,16 @@ include 'who-we-are.php';
 </section>
 
 <!-- Products Section -->
-<section class="px-5">
+<section class="px-5 pb-12.5" >
     <div class='container mx-auto'>
-        <div class="pb-12.5">
-            <div class="relative md:rounded-[30px] flex items-center linear-background-secondary h-auto lg:p-16
+        
+            <div class="relative md:rounded-[30px] linear-background-secondary h-auto lg:p-16
                 sm:p-10 p-8 rounded-3xl">
                 <img src="./assets/images/products.png" alt="Products" class="absolute right-0 top-0 md:w-auto w-48">
 
                 <div class="relative z-10" data-aos='zoom-in-up'>
                     <div class="lg:max-w-4xl max-w-3xl">
-                        <div class="md:h-18.75 md:w-18.75 md:rounded-[20px] rounded-2xl bg-white 
-                            flex items-center justify-center h-15 w-15">
+                        <div class="md:h-18.75 md:w-18.75 md:rounded-[20px] rounded-2xl bg-white h-15 w-15">
                             <img src="./assets/icons/products_icon.png" alt="Products" class="md:mt-0 mt-1">
                         </div>
 
@@ -443,7 +435,6 @@ include 'who-we-are.php';
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </section>
 
