@@ -20,6 +20,10 @@
     background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
 }
 
+.radial-gradient-mix {
+    background: radial-gradient(84.61% 149.04% at 22.8% 65.37%, #0C84BC 0%, #1658A5 51.92%, #EF6A24 100%);
+}
+
 .linear-background-secondary {
     background: linear-gradient(146.18deg, #0C84BC 10.48%, #1658A5 86.16%);
 }
@@ -29,7 +33,7 @@
 }
 
 .light-blue-linear {
-    background: radial-gradient(91.5% 69.17% at 100% 69.17%, #CDEFFF 0%, #FBFBFB 100%)
+    background: linear-gradient(116.6deg, #B0E1FF 8.96%, #FFFFFF 96.48%);
 }
 
 .radial-gradient {
@@ -37,7 +41,14 @@
 }
 
 .linear-text-gradient {
-    background: linear-gradient(90deg, #EF6A24 0%, #0C84BC 100%);
+    background: linear-gradient(146.18deg, #0C84BC 10.48%, #1658A5 86.16%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.linear-text-orange {
+    background: linear-gradient(124.07deg, #EF6A24 19.79%, #F99D3C 88.53%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -50,6 +61,18 @@
         31.22px 17.74px 21.29px 0px #8C8C8C0D,
         56.05px 31.93px 25.54px 0px #8C8C8C03,
         87.27px 49.67px 28.38px 0px #8C8C8C00;
+}
+
+.char {
+    transition: opacity .18s ease-out, color .18s ease-out;
+}
+
+.char-muted {
+    opacity: .25;
+}
+
+.char-active {
+    opacity: 1;
 }
 
 @media (min-width: 96rem) {
