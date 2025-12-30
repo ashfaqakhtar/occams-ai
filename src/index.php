@@ -49,7 +49,6 @@ include "header.php";
     </div> -->
 </section>
 
-
 <!-- Why AI Fails Inside Organizations Section -->
 <section class="bg-white relative bg-no-repeat bg-position-[right_center] px-5 md:bg-size-[auto_50%] bg-size-[auto_30%]"
     style="background-image: url('./assets/images/ai-fails-inside.png')">

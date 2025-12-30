@@ -30,7 +30,7 @@
 
                     <div class="relative group cursor-pointer">
                         <div class="flex items-center gap-1.5">
-                            <span class='block inter'>Who We Are</span>
+                            <a href='/who-we-are.php' class='block inter'>Who We Are</a>
                             <img src='./assets//icons/down_arrow.svg' alt='Down Arrow' class="mt-0.75" />
                         </div>
 
