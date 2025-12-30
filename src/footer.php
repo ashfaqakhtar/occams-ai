@@ -169,7 +169,7 @@
                 const progress = clamp((mid - rect.top) / Math.max(rect.height, 1), 0, 1);
                 const target = Math.floor(progress * node._chars.length);
 
-                if (target === node._activeCount) return; 
+                if (target === node._activeCount) return;
 
                 if (target > node._activeCount) {
                     for (let i = node._activeCount; i < target; i++) {
@@ -189,16 +189,11 @@
             });
         }
 
-        // tiny helper styles (optional)
         const style = document.createElement("style");
-        style.textContent = `
-    .char { transition: opacity .18s ease-out, color .18s ease-out; }
-    .char-muted { opacity:.25; }
-    .char-active { opacity:1; }
-  `;
+        style.textContent = `.char { transition: opacity .18s ease-out, color .18s ease-out; }
+            .char-muted { opacity:.25; } .char-active { opacity:1; }`;
         document.head.appendChild(style);
 
-        // init
         update();
         let ticking = false;
         function onScroll() {
@@ -210,7 +205,6 @@
         window.addEventListener("scroll", onScroll, { passive: true });
         window.addEventListener("resize", update);
     })();
-
 </script>
 
 </html>
