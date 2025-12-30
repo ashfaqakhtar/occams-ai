@@ -49,6 +49,10 @@ include "header.php";
     </div> -->
 </section>
 
+<?php
+include 'who-we-are.php';
+?>
+
 <!-- Why AI Fails Inside Organizations Section -->
 <section class="bg-white relative bg-no-repeat bg-position-[right_center] px-5 md:bg-size-[auto_50%] bg-size-[auto_30%]"
     style="background-image: url('./assets/images/ai-fails-inside.png')">
@@ -403,8 +407,8 @@ include "header.php";
 <section class="px-5">
     <div class='container mx-auto'>
         <div class="pb-12.5">
-            <div class="relative md:rounded-[30px] flex items-center linear-background-secondary md:h-130 h-auto lg:px-16
-                    sm:px-10 px-8 rounded-3xl md:py-0 py-11">
+            <div class="relative md:rounded-[30px] flex items-center linear-background-secondary h-auto lg:p-16
+                sm:p-10 p-8 rounded-3xl">
                 <img src="./assets/images/products.png" alt="Products" class="absolute right-0 top-0 md:w-auto w-48">
 
                 <div class="relative z-10" data-aos='zoom-in-up'>
@@ -426,15 +430,15 @@ include "header.php";
 
                     <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
                         <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="/assets/incubation_ai.png" alt="Incubation Ai" />
+                            <img src="./assets/images/incubation_ai.png" alt="Incubation Ai" />
                         </a>
 
                         <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="/assets/cfoinsights_ai.png" alt="Cfoinsights Ai" />
+                            <img src="./assets/images/cfoinsights_ai.png" alt="Cfoinsights Ai" />
                         </a>
 
                         <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
-                            <img src="/assets/taxvantage_ai.png" alt="Taxvantage Ai" />
+                            <img src="./assets/images/taxvantage_ai.png" alt="Taxvantage Ai" />
                         </a>
                     </div>
                 </div>
