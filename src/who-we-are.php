@@ -1,3 +1,9 @@
+<?php $title = "Occams | Ai";
+$meta = "Occams | Ai";
+$metakeyword = "";
+include "header.php";
+?>
+
 <section class="lg:px-24 sm:px-7 px-5 py-10">
     <div class="mx-auto max-w-7xl">
         <div class="grid grid-cols-12 gap-6 items-start">
@@ -7,3 +13,7 @@
         </div>
     </div>
 </section>
+
+<?php
+include 'footer.php';
+?>

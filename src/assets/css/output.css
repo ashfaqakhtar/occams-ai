@@ -1501,6 +1501,11 @@
       max-width: var(--container-4xl);
     }
   }
+  .lg\:max-w-6xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-6xl);
+    }
+  }
   .lg\:max-w-145 {
     @media (width >= 64rem) {
       max-width: calc(var(--spacing) * 145);
