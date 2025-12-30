@@ -399,6 +399,50 @@ include "header.php";
     </div>
 </section>
 
+<!-- Products Section -->
+<section class="px-5">
+    <div class='container mx-auto'>
+        <div class="pb-12.5">
+            <div class="relative md:rounded-[30px] flex items-center linear-background-secondary md:h-130 h-auto lg:px-16
+                    sm:px-10 px-8 rounded-3xl md:py-0 py-11">
+                <img src="./assets/images/products.png" alt="Products" class="absolute right-0 top-0 md:w-auto w-48">
+
+                <div class="relative z-10" data-aos='zoom-in-up'>
+                    <div class="lg:max-w-4xl max-w-3xl">
+                        <div class="md:h-18.75 md:w-18.75 md:rounded-[20px] rounded-2xl bg-white 
+                            flex items-center justify-center h-15 w-15">
+                            <img src="./assets/icons/products_icon.png" alt="Products" class="md:mt-0 mt-1">
+                        </div>
+
+                        <h1 class="lg:text-4xl sm:text-3xl text-2xl font-bold text-white sm:mt-4 mt-2.5">
+                            Products
+                        </h1>
+
+                        <p class='xl:text-[22px] md:text-lg text-base sm:mt-4 mt-1.5 text-white font-normal'>
+                            Software built on clear logic, transparent reasoning, and measurable outcomes. Each product
+                            addresses patterns that repeat across industries.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                            <img src="/assets/incubation_ai.png" alt="Incubation Ai" />
+                        </a>
+
+                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                            <img src="/assets/cfoinsights_ai.png" alt="Cfoinsights Ai" />
+                        </a>
+
+                        <a href='https://incubation.ai/' target="_blank" class="cursor-pointer">
+                            <img src="/assets/taxvantage_ai.png" alt="Taxvantage Ai" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Why Organizations Choose Occams AI Section -->
 <section class="px-5">
     <div class='container mx-auto'>
