@@ -690,11 +690,20 @@
   .bg-size-\[50\%\] {
     background-size: 50%;
   }
+  .bg-size-\[auto\] {
+    background-size: auto;
+  }
+  .bg-size-\[auto_30\%\] {
+    background-size: auto 30%;
+  }
   .bg-size-\[auto_50\%\] {
     background-size: auto 50%;
   }
   .bg-size-\[auto_80\%\] {
     background-size: auto 80%;
+  }
+  .bg-\[50\%\] {
+    background-position: 50%;
   }
   .bg-center {
     background-position: center;
@@ -1255,6 +1264,11 @@
   .md\:rounded-xl {
     @media (width >= 48rem) {
       border-radius: var(--radius-xl);
+    }
+  }
+  .md\:bg-size-\[auto_50\%\] {
+    @media (width >= 48rem) {
+      background-size: auto 50%;
     }
   }
   .md\:p-1 {
