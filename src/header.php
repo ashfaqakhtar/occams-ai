@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/output.css">
     <link rel="shortcut icon" href="./assets/icons/Fevicon.png" type="png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
     <title>
         <?php echo $title; ?>
     </title>
@@ -38,7 +44,7 @@
                             opacity-0 group-hover:opacity-100 w-max invisible group-hover:visible transition-all 
                             duration-200 z-50 top-13.5 border border-[#E4E4E7]">
                             <div class="flex flex-col space-y-2">
-                                <a href='/brand-story' class='flex items-center gap-2.5 pr-5'>
+                                <a href='brand' class='flex items-center gap-2.5 pr-5'>
                                     <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
                                     Brand Story
                                 </a>

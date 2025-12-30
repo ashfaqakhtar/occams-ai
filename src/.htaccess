@@ -1,0 +1,9 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Make sure we're not rewriting real directories or files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite request to .php file if it exists
+RewriteRule ^([^/]+)/?$ $1.php [L]
