@@ -207,4 +207,104 @@
     })();
 </script>
 
+<!-- Card Stack Section -->
+<script>
+    const CARDS = [
+        {
+            id: 1, number: "1",
+            title: "SIMPLICITY AS A FORM OF INTELLIGENCE",
+            desc: "A system is only useful when people can understand it. We design intelligence that leaders can trust and teams can integrate into daily work without confusion. If a system cannot explain itself, it cannot guide decisions responsibly.",
+            bgClass: "linear-background"
+        },
+        {
+            id: 2, number: "2",
+            title: "CLAIMS THAT CAN BE TRUSTED",
+            desc: "We connect metrics to reality, making AI outputs verifiable and actionable for teams and operators.",
+            bgClass: "linear-background-secondary"
+        },
+        {
+            id: 3, number: "3",
+            title: "SUPPORT HUMAN JUDGMENT",
+            desc: "Systems should support people—not replace them—especially where context and accountability matter.",
+            bgClass: "linear-background"
+        },
+        {
+            id: 4, number: "4",
+            title: "RELAXED, RELIABLE EXECUTION",
+            desc: "Workflows that teams actually adopt, built for clarity and operational reality.",
+            bgClass: "linear-background-secondary"
+        },
+    ];
+
+    let order = [1, 2, 3, 4];
+
+    function rotateToTop(arr, id) {
+        const idx = arr.indexOf(id);
+        if (idx === -1) return arr;
+        return [...arr.slice(idx), ...arr.slice(0, idx)];
+    }
+
+    const stackEl = document.getElementById("stack");
+    const cardEls = new Map();
+
+    CARDS.forEach(card => {
+        const el = document.createElement("div");
+        el.className = `stack-card`;
+        el.dataset.id = card.id;
+
+        el.innerHTML = `
+  <div class="relative h-full w-full rounded-[28px] overflow-hidden ${card.bgClass}">
+    
+    <!-- number always visible -->
+    <div class="badge">${card.number}</div>
+
+    <!-- content (only active card) -->
+    <div class="card-body h-full p-6 sm:p-7 text-white">
+      <h3 class="text-xl sm:text-2xl font-extrabold uppercase leading-tight max-w-[520px]">
+        ${card.title}
+      </h3>
+      <p class="mt-3 text-sm sm:text-[15px] leading-[1.75] text-white/85 max-w-[640px]">
+        ${card.desc}
+      </p>
+    </div>
+
+    <!-- decorative waves / circles -->
+    <div class="pointer-events-none absolute inset-0 opacity-20">
+      <div class="absolute -right-10 -bottom-10 h-48 w-48 rounded-full border border-white/40"></div>
+      <div class="absolute -right-16 -bottom-16 h-56 w-56 rounded-full border border-white/30"></div>
+    </div>
+
+  </div>
+`;
+
+
+        el.addEventListener("click", () => {
+            order = rotateToTop(order, card.id);
+            layout();
+        });
+
+        cardEls.set(card.id, el);
+        stackEl.appendChild(el);
+    });
+
+    function layout() {
+        [...order].reverse().forEach(id => {
+            const pos = order.indexOf(id);
+            const el = cardEls.get(id);
+            const isTop = pos === 0;
+
+            el.classList.toggle("is-active", isTop);
+
+            el.style.zIndex = String(100 - pos);
+            el.style.boxShadow = isTop
+                ? "shadow-stack"
+                : "";
+
+            el.style.transform = `translateX(calc(${pos} * var(--peek))) translateY(0px)`;
+        });
+    }
+
+    layout();
+</script>
+
 </html>
