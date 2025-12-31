@@ -23,14 +23,14 @@
     <header class="fixed top-0 left-0 right-0 z-40 w-full py-9.75 px-5">
         <div class='container mx-auto flex justify-between items-center'>
             <div class='flex justify-between w-full items-center'>
-                <div class="inline-block my-auto">
+                <a href="index" class="inline-block my-auto">
                     <img src='./assets/images/occams-white-ai.svg' alt='Occams Ai' class="lg:h-12 h-10 max-w-max" />
-                </div>
+                </a>
 
                 <!-- <div class="flex xl:justify-center md:justify-end w-full"> -->
                 <div class="md:flex items-center xl:gap-7.5 md:gap-5 gap-8 md:text-lg text-base hidden h-17.5 pr-6
                     rounded-[50px] pl-1.25 text-[#1E1E1E] font-medium bg-white border border-[#E3E3E3]">
-                    <a href='' class="flex items-center rounded-[50px] justify-center h-15 w-26 linear-background">
+                    <a href="index" class="flex items-center rounded-[50px] justify-center h-15 w-26 linear-background">
                         <img src='./assets/icons/home_icon.svg' alt='Home Icon' />
                     </a>
 
@@ -49,7 +49,7 @@
                                     Brand Story
                                 </a>
 
-                                <a href='researchers' class='flex items-center gap-2.5 pr-5'>
+                                <a href='our-researchers' class='flex items-center gap-2.5 pr-5'>
                                     <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
                                     Researchers
                                 </a>
@@ -102,15 +102,15 @@
                                 </li>
 
                                 <li class="text-base leading-[1.8]">
-                                    <a href='researchers'>Researchers</a>
+                                    <a href='our-researchers'>Researchers</a>
                                 </li>
                             </ul>
                         </a>
                     </li>
 
                     <!-- <li><a href="brand" class=" text-black navigation-font">Brand Story</a></li>
-                    <li><a href="researchers" class=" text-black navigation-font">Researchers</a></li> -->
-                    
+                    <li><a href="our-researchers" class=" text-black navigation-font">Researchers</a></li> -->
+
                     <li><a href="product" class=" text-black navigation-font">Product</a></li>
                     <li><a href="insights" class=" text-black navigation-font">Insights</a></li>
                     <li><a href="contact" class=" text-black navigation-font">Contact us</a></li>

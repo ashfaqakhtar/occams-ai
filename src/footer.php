@@ -3,7 +3,9 @@
         <div class="bg-[#FFF5F0] md:px-13.75 px-8 md:py-20 py-14 rounded-4xl">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-10 lg:gap-8 gap-8">
                 <div>
-                    <img src='./assets/images/occams-ai.svg' class='lg:h-12 h-10' alt='Occams Ai' />
+                    <a href="index">
+                        <img src='./assets/images/occams-ai.svg' class='lg:h-12 h-10' alt='Occams Ai' />
+                    </a>
 
                     <p class="my-5 text-[#52525B] xl:text-base lg:text-[15px] text-base leading-[1.7]">
                         Lorem ipsum dolor sit amet,
@@ -46,7 +48,7 @@
                                 </li>
 
                                 <li class="text-base leading-[1.8]">
-                                    <a href='researchers'>Researchers</a>
+                                    <a href='our-researchers'>Researchers</a>
                                 </li>
                             </ul>
                         </li>
@@ -209,101 +211,114 @@
 
 <!-- Card Stack Section -->
 <script>
-    const CARDS = [
-        {
-            id: 1, number: "1",
-            title: "SIMPLICITY AS A FORM OF INTELLIGENCE",
-            desc: "A system is only useful when people can understand it. We design intelligence that leaders can trust and teams can integrate into daily work without confusion. If a system cannot explain itself, it cannot guide decisions responsibly.",
-            bgClass: "linear-background"
-        },
-        {
-            id: 2, number: "2",
-            title: "CLAIMS THAT CAN BE TRUSTED",
-            desc: "We connect metrics to reality, making AI outputs verifiable and actionable for teams and operators.",
-            bgClass: "linear-background-secondary"
-        },
-        {
-            id: 3, number: "3",
-            title: "SUPPORT HUMAN JUDGMENT",
-            desc: "Systems should support people—not replace them—especially where context and accountability matter.",
-            bgClass: "linear-background"
-        },
-        {
-            id: 4, number: "4",
-            title: "RELAXED, RELIABLE EXECUTION",
-            desc: "Workflows that teams actually adopt, built for clarity and operational reality.",
-            bgClass: "linear-background-secondary"
-        },
-    ];
+    const cards = [...document.querySelectorAll(".stack-card")];
+    let order = cards.map(c => c.dataset.id);
 
-    let order = [1, 2, 3, 4];
+    const IMG_MAP = {
+        "1": "./assets/images/build-note.png",
+        "2": "./assets/images/playbook.png",
+        "3": "./assets/images/field-guide.png",
+        "4": "./assets/images/transparency.png",
+    };
 
-    function rotateToTop(arr, id) {
-        const idx = arr.indexOf(id);
-        if (idx === -1) return arr;
-        return [...arr.slice(idx), ...arr.slice(0, idx)];
-    }
+    const activeMedia = document.getElementById("activeMedia");
+    const stack = document.getElementById("stack");
 
-    const stackEl = document.getElementById("stack");
-    const cardEls = new Map();
+    const shadowStack = `
+        3.55px 2.13px 8.51px 0px #8C8C8C1A,
+        14.19px 7.8px 16.32px 0px #8C8C8C17,
+        31.22px 17.74px 21.29px 0px #8C8C8C0D,
+        56.05px 31.93px 25.54px 0px #8C8C8C03,
+        87.27px 49.67px 28.38px 0px #8C8C8C00;
+    `;
 
-    CARDS.forEach(card => {
-        const el = document.createElement("div");
-        el.className = `stack-card`;
-        el.dataset.id = card.id;
+    function setActiveOnly(activeId) {
+        const mobile = window.matchMedia("(max-width: 767px)").matches;
 
-        el.innerHTML = `
-  <div class="relative h-full w-full rounded-[28px] overflow-hidden ${card.bgClass}">
-    
-    <!-- number always visible -->
-    <div class="badge">${card.number}</div>
+        cards.forEach(c => {
+            const isActive = c.dataset.id === String(activeId);
+            c.classList.toggle("is-active", isActive);
 
-    <!-- content (only active card) -->
-    <div class="card-body h-full p-6 sm:p-7 text-white">
-      <h3 class="text-xl sm:text-2xl font-extrabold uppercase leading-tight max-w-[520px]">
-        ${card.title}
-      </h3>
-      <p class="mt-3 text-sm sm:text-[15px] leading-[1.75] text-white/85 max-w-[640px]">
-        ${card.desc}
-      </p>
-    </div>
+            const body = c.querySelector(".card-body");
+            const back = c.querySelector(".back-body");
+            const badgeLeft = c.querySelector(".badge-left");
+            const badgeRight = c.querySelector(".badge-right");
 
-    <!-- decorative waves / circles -->
-    <div class="pointer-events-none absolute inset-0 opacity-20">
-      <div class="absolute -right-10 -bottom-10 h-48 w-48 rounded-full border border-white/40"></div>
-      <div class="absolute -right-16 -bottom-16 h-56 w-56 rounded-full border border-white/30"></div>
-    </div>
+            if (mobile) {
+                if (body) body.style.display = "block";
+                if (back) back.style.display = "none";
+                if (badgeLeft) badgeLeft.style.display = "flex";
+                if (badgeRight) badgeRight.style.display = "none";
+                return;
+            }
 
-  </div>
-`;
+            if (body) body.style.display = isActive ? "block" : "none";
+            if (back) back.style.display = isActive ? "none" : "flex";
 
-
-        el.addEventListener("click", () => {
-            order = rotateToTop(order, card.id);
-            layout();
+            if (badgeLeft) badgeLeft.style.display = isActive ? "flex" : "none";
+            if (badgeRight) badgeRight.style.display = isActive ? "none" : "flex";
         });
 
-        cardEls.set(card.id, el);
-        stackEl.appendChild(el);
-    });
+        if (!mobile && activeMedia) {
+            activeMedia.src = IMG_MAP[String(activeId)] || IMG_MAP["1"];
+            const activeInner = document.querySelector(`.stack-card[data-id="${activeId}"] > div`);
+            if (activeInner) activeInner.appendChild(activeMedia);
+        }
+    }
+
+    function rotateToTop(id) {
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        if (isMobile) return;
+
+        const index = order.indexOf(String(id));
+        order = [...order.slice(index), ...order.slice(0, index)];
+        layout();
+    }
+
+    cards.forEach(card => card.addEventListener("click", () => rotateToTop(card.dataset.id)));
 
     function layout() {
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+        if (isMobile) {
+            stack.style.height = "auto";
+            cards.forEach((card) => {
+                card.style.position = "relative";
+                card.style.transform = "none";
+                card.style.width = "100%";
+                card.style.height = "auto";
+                card.style.marginBottom = "16px";
+                card.style.zIndex = "auto";
+                card.style.boxShadow = "none";
+            });
+            activeMedia.classList.add("hidden");
+            setActiveOnly(order[0]);
+            return;
+        }
+
+        stack.style.height = "400px";
+        activeMedia.classList.remove("hidden");
+
         [...order].reverse().forEach(id => {
+            const card = document.querySelector(`.stack-card[data-id="${id}"]`);
             const pos = order.indexOf(id);
-            const el = cardEls.get(id);
             const isTop = pos === 0;
 
-            el.classList.toggle("is-active", isTop);
+            card.style.position = "absolute";
+            card.style.left = "0";
+            card.style.top = "0";
+            card.style.width = "100%";
+            card.style.height = "100%";
 
-            el.style.zIndex = String(100 - pos);
-            el.style.boxShadow = isTop
-                ? "shadow-stack"
-                : "";
-
-            el.style.transform = `translateX(calc(${pos} * var(--peek))) translateY(0px)`;
+            card.style.zIndex = 100 - pos;
+            card.style.transform = `translateX(calc(${pos} * var(--peek)))`;
+            card.style.boxShadow = isTop ? shadowStack : "none";
         });
+
+        setActiveOnly(order[0]);
     }
 
+    window.addEventListener("resize", layout);
     layout();
 </script>
 

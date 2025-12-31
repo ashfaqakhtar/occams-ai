@@ -6,7 +6,7 @@ include "header.php";
 
 <!-- hero section   -->
 <section class="hero-background">
-    <div class="container mx-auto py-[180px]">
+    <div class="container mx-auto py-45">
         <h1 class="text-white text-center font-inter text-[3.375rem] font-bold leading-normal lg:px-29.5">A Foundation
             Built on
             Vision, Responsibility, and Measurable Impact</h1>
