@@ -126,6 +126,14 @@ include "header.php";
 <!-- Brand Essence section  -->
 <section>
     <div class="container mx-auto">
+
+        <div class="grid">
+            <div class="mb-6">
+                <img src="./assets/icons/diamond_gradient.svg" alt="">
+                <h3 class="text-black font-inter text-[2.5rem] font-bold leading-[3.25rem]">Brand Essence</h3>
+            </div>
+        </div>
+
         <div
             class="relative grid bg-[linear-gradient(146deg,_#0C84BC_10.48%,_#1658A5_86.16%)] rounded-[3.12rem] overflow-hidden">
             <img class="absolute right-0 top-0 max-w-none" src="./assets/images/Vector.svg" alt="" />
@@ -139,12 +147,32 @@ include "header.php";
         </div>
     </div>
 
-    <div class="container">
-        <div class="grid grid-cols-2">
-            <div class="bg-[linear-gradient(124deg,_#EF6A24_19.79%,_#F99D3C_88.53%)]">
-                <img src="" alt="">
-                <h2 class="text-white font-inter text-[2.5rem] font-bold leading-normal">Values </h2>
-                <p class="text-white font-inter text-[1.625rem] font-normal leading-[2.1875rem]">Vision. Evidence. Responsibility. Simplicity. Measurable impact. </p>
+    <div class="container mx-auto mt-5">
+        <div class="grid grid-cols-2 gap-6 ">
+
+            <div
+                class="bg-[linear-gradient(124deg,_#EF6A24_19.79%,_#F99D3C_88.53%)] rounded-[1.87rem] py-[100px] px-[40px] relative">
+                <img class="absolute top-0 right-0" src="./assets/images/value-pattern.png" alt="">
+                <div class="">
+                    <img src="./assets/images/value-1.svg" alt="value">
+                    <h2 class="text-white font-inter text-[2.5rem] font-bold leading-normal">Values </h2>
+                    <p class="text-white font-inter text-[1.625rem] font-normal leading-[2.1875rem]">Vision. Evidence.
+                        Responsibility. Simplicity. Measurable impact. </p>
+                </div>
+            </div>
+
+            <div
+                class="bg-[linear-gradient(124deg,_#EF6A24_19.79%,_#F99D3C_88.53%)] rounded-[1.87rem]  py-[100px] px-[40px] relative">
+
+                <img class="absolute top-0 right-0" src="./assets/images/promise-pattern.png" alt="">
+
+                <div>
+                    <img src="./assets/images/handshake.svg" alt="handshake">
+                    <h2 class="text-white font-inter text-[2.5rem] font-bold leading-normal">Promise  </h2>
+                    <p class="text-white font-inter text-[1.625rem] font-normal leading-[2.1875rem]">Intelligence that
+                        leaders can understand. Intelligence that organizations can trust. Intelligence that works.  
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -152,7 +180,64 @@ include "header.php";
 
 <!-- Brand Essence section ends -->
 
+
 <div class="spacing"></div>
+
+<!-- How We Think About Intelligence -->
+
+<section>
+    <div class="container mx-auto">
+        <div class="grid mb-8">
+            <img src="./assets/icons/diamond_gradient.svg" alt="">
+            <h1 class="text-black font-inter text-[2.5rem] font-bold leading-[3.25rem]">How We Think About Intelligence
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div>
+                <p class="text-[#52525B] font-inter text-[1.75rem] font-light leading-[2.875rem] mb-5">We publish clear,
+                    grounded writing on AI adoption, responsible intelligence, and real-world
+                    applications. Our work focuses on what organizations need to know, not what trends demand. </p>
+
+                <a class="rounded-lg bg-[linear-gradient(90deg,_#EF6A24_0%,_#F99D3C_100%)] text-white p-[10px] "
+                    href="">Browse All
+                    Insights</a>
+            </div>
+
+            <div
+                class="rounded-[1.875rem] bg-[radial-gradient(99.81%_91.68%_at_16.42%_23.92%,_#CDEFFF_0%,_#FBFBFB_100%)]">
+                <div class="p-[25px]">
+                    <img class="mx-auto" src="./assets/images/boi-image.svg" alt="BOI">
+
+                    <h4 class="text-black font-inter text-[1.625rem] font-medium leading-normal mb-3 mt-2">Field Guide —
+                        BOI
+                        filings:
+                        the 20-minute checklist</h4>
+
+                    <p class="text-[#9D9D9D] font-inter text-[1.25rem] font-normal leading-[1.8125rem]">A practical path
+                        to
+                        nail every required step—clear, repeatable, mistake-proof.</p>
+                </div>
+            </div>
+
+            <div class="rounded-[1.875rem] bg-[linear-gradient(146deg,_#0C84BC_10.48%,_#1658A5_86.16%)] flex flex justify-center items-center">
+                <div class="w-[30%]">
+                    <img class="w-6 h-6 mt-1" src="./assets/images/orange-star.png" alt="how we think about intelligence">
+
+                </div>
+                <div class="w-70%">
+                    <h3 class="text-white font-inter text-[1.5rem] font-semibold leading-[2.125rem]">If your
+                        organization is tired of AI that looks impressive but delivers uncertainty,  </h3>
+                    <a class="rounded-lg bg-[linear-gradient(90deg,_#EF6A24_0%,_#F99D3C_100%)] text-white p-[10px] "
+                        href="#">Speak with us</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- How We Think About Intelligenceend -->
 
 
 
