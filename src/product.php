@@ -6,7 +6,7 @@ include "header.php";
 
 <!-- hero section   -->
 <section class="hero-background">
-    <div class="container mx-auto py-45 px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto py-45 px-4 lg:px-0">
         <h1 class="text-white text-center font-inter text-[3.375rem] font-bold  lg:px-50">Three Pillars.
             One Purpose:
             Intelligence That Works.</h1>
@@ -21,7 +21,7 @@ include "header.php";
 <!-- We Serve -->
 
 <section>
-    <div class="container mx-auto px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto px-4 lg:px-0">
         <div class="grid">
             <div>
                 <img src="./assets/icons/diamond_gradient.svg" alt="">
@@ -51,7 +51,7 @@ include "header.php";
 <!-- Understanding Before Adoption -->
 
 <section class="understanding-before-adoption">
-    <div class="container mx-auto lg:py-20 md:py-12.5 py-7.5 px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto lg:py-20 md:py-12.5 py-7.5 px-4 lg:px-0">
         <div class="grid">
             <div>
                 <img src="./assets/images/white-star.svg" alt="white star">
@@ -104,7 +104,7 @@ include "header.php";
 <!-- our product  -->
 
 <section>
-    <div class="container mx-auto px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto px-4 lg:px-0">
 
         <div class="grid mb-3">
             <div>
@@ -173,7 +173,7 @@ include "header.php";
 
 <!-- Intelligence for Complex Systems -->
 <section>
-    <div class="container mx-auto px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto px-4 lg:px-0">
         <div class="grid mb-3">
             <div>
                 <img src="./assets/icons/diamond_gradient.svg" alt="">
@@ -195,7 +195,7 @@ include "header.php";
             </div>
         </div>
 
-        <div class="grid lg:grid-cols-2">
+        <div class="grid lg:grid-cols-2 gap-6">
             <div>
                 <img class="w-full" src="./assets/images/human-interact.webp" alt="human Interaction">
             </div>
@@ -227,7 +227,7 @@ include "header.php";
 
 <!-- Each product follows the same principles.  -->
 <section>
-    <div class="container mx-auto px-4 md:px-0 lg:px-0">
+    <div class="container mx-auto px-4 lg:px-0">
         <div class="grid mb-3">
             <div>
                 <img src="./assets/icons/diamond_gradient.svg" alt="">
