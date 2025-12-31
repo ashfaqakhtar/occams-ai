@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
-
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+}
 
 :root {
     --peek: clamp(18px, 4vw, 56px);
