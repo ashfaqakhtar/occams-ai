@@ -64,15 +64,6 @@
     color: transparent;
 }
 
-.shadow-stack {
-    box-shadow:
-        3.55px 2.13px 8.51px 0px #8C8C8C1A,
-        14.19px 7.8px 16.32px 0px #8C8C8C17,
-        31.22px 17.74px 21.29px 0px #8C8C8C0D,
-        56.05px 31.93px 25.54px 0px #8C8C8C03,
-        87.27px 49.67px 28.38px 0px #8C8C8C00;
-}
-
 .char {
     transition: opacity .18s ease-out, color .18s ease-out;
 }
@@ -84,63 +75,6 @@
 .char-active {
     opacity: 1;
 }
-
-/* Card Stack Css */
-.stack-card {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    user-select: none;
-    transition: transform 420ms cubic-bezier(.2, .8, .2, 1), box-shadow 300ms ease;
-    will-change: transform;
-}
-
-.stack-card .card-body {
-    opacity: 0;
-    transform: translateY(6px);
-    pointer-events: none;
-}
-
-.stack-card.is-active .card-body {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.stack-card .card-body,
-.stack-card .badge {
-    transition: opacity 250ms ease, transform 250ms ease;
-}
-
-.stack-card:not(.is-active) .card-body {
-    opacity: 0;
-    transform: translateY(6px);
-}
-
-.badge {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 32px;
-    height: 32px;
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
-    border: 1px solid rgba(255, 255, 255, .55);
-    color: #fff;
-    background: rgba(0, 0, 0, .12);
-    backdrop-filter: blur(6px);
-}
-
-/* Card Stack Css */
 
 @media (min-width: 96rem) {
     .container {
