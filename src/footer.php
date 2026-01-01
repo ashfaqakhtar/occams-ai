@@ -119,7 +119,7 @@
                 </div>
 
                 <p class="text-base leading-[1.8] text-[#52525B]">
-                    © 2025, All Rights Reserved
+                    © <script>document.write(new Date().getFullYear());</script>, All Rights Reserved
                 </p>
             </div>
         </div>
